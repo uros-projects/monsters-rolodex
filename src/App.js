@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import MonsterMain from './components/Monster/MonsterMain';
 
 function App() {
+  const styles = {
+    textAlign: 'center',
+    background: 'linear-gradient(to left, rgba(7, 27, 82, 1) 0%, rgba(0, 128, 128, 1) 100%',
+    h1: {
+      background: 'pink',
+      padding: '1rem',      
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styles}>
+        <h1 style={styles.h1}>Project</h1>
+        <MonsterMain  />
     </div>
   );
 }
